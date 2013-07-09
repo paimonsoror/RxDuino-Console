@@ -1,0 +1,76 @@
+﻿<!--
+ * NormalException.net All rights reserved.
+ * This program is not free software; you can not redistribute it and/or modify
+ * it under any terms within the written consent of the developer.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * 
+ * You should have recieved a copy of the rights associated with this program and
+ * all associated source files and hardware related to this program.  If you do
+ * not agree to these rights, please cease all use and dispose of this program
+ * immidately.
+ * 
+ * Violation of these terms is prosecutable by law.
+ *
+ -->
+<Window x:Class="RxDuinoConsole.RxDuinoView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        Title="RxDuino Console" Height="569" Width="505" ResizeMode="CanMinimize" Loaded="Window_Loaded" Closing="Window_Closed" >
+    <Grid>
+        <Menu IsMainMenu="True" Margin="0,0,0,52" Grid.RowSpan="2">
+            <MenuItem Header="_File">
+                <MenuItem Header="Show MOTD" Click="showMotd_Click"/>
+                <Separator/>
+                <MenuItem Header="Load Console" Click="loadConsoleButton_Click"/>
+                <MenuItem Header="Save Console" Click="saveConsoleButton_Click"/>
+                <MenuItem Header="_Clear Console" Click="clearButton_Click"/>
+                <Separator/>
+                <MenuItem Header="_Refresh Ports" Click="refreshButton_Click"/>
+                <MenuItem Header="_Update Firmware" Click="updateFirmware_Click"/>
+                <Separator/>
+                <MenuItem Header="_Exit" Click="exit_Click"/>
+            </MenuItem>
+            <MenuItem Header="_Tools">
+                <MenuItem Header="Insert Console Break" Click="breakButton_Click"/>
+                <MenuItem Header="Configuration" Click="configuration_Click" />
+            </MenuItem>
+            <MenuItem Header="_Help">
+                <MenuItem Header="_Check For Updates..." Click="checkForUpdates_Click"/>
+                <Separator/>
+                <MenuItem Header="_Save Log File" Click="saveLogFile_Click"/>
+                <MenuItem Header="_View Log File" Click="viewLogFile_Click"/>
+                <Separator />
+                <MenuItem Header="_FTDI Drivers" Click="ftdi_Click"/>
+                <Separator/>
+                <MenuItem Header="_NormalException.net" Click="weblink_Click"/>
+                <MenuItem Header="_About" Click="about_Click"/>
+            </MenuItem>
+        </Menu>
+        <Label Content="Select COM Port: " Height="26" Name="comPortLabel" Width="99" Margin="12,31,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <ComboBox Height="23" Name="comPortCombo" Width="182" Margin="118,34,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" SelectionChanged="comPortCombo_SelectionChanged" />
+        <Button Content="Connect" Height="23" Margin="306,34,0,0" Name="connectButton" VerticalAlignment="Top" HorizontalAlignment="Left" Width="83" Click="connectButton_Click" />
+        <Button Content="Refresh" Height="23" HorizontalAlignment="Left" Margin="395,34,0,0" Name="refreshButton" VerticalAlignment="Top" Width="75" Click="refreshButton_Click"/>
+        <Button Content="Exit" HorizontalAlignment="Right" Margin="0,0,10,11" Name="exitButton" Width="75" Click="exit_Click" Height="23" VerticalAlignment="Bottom" Grid.Row="1" />
+        <Button Content="Clear" Margin="12,66,0,0" Name="clearButton" Click="clearButton_Click" FontSize="10" Height="17" VerticalAlignment="Top" HorizontalAlignment="Left" Width="40" />
+        <Label Content="Firmware Version: " HorizontalAlignment="Left" Margin="12,0,0,5" Name="firmwareLabel" Width="179" Height="28" VerticalAlignment="Bottom" Grid.Row="1" />
+        <Button Content="Update Firmware" Margin="0,0,92,12" Name="updateFirmware" HorizontalAlignment="Right" Width="111" Click="updateFirmware_Click" Height="23" VerticalAlignment="Bottom" Grid.Row="1" />
+        <TextBox Height="23" Margin="118,467,92,0" Name="commandText" VerticalAlignment="Top" KeyDown="commandText_KeyDown" />
+        <Button Content="Submit" Height="23" Margin="0,467,11,0" Name="submitButton" VerticalAlignment="Top" HorizontalAlignment="Right" Width="75" Click="submitButton_Click" />
+        <ComboBox Margin="12,467,0,0" Name="msgList" HorizontalAlignment="Left" Width="99" Height="23" VerticalAlignment="Top" SelectionChanged="messageSelected" />
+        <Button Content="Break" FontSize="10" Height="17" Margin="58,66,0,0" Name="breakButton" VerticalAlignment="Top" Click="breakButton_Click" HorizontalAlignment="Left" Width="40" />
+        <Button Content="Save" FontSize="10" Height="17" Margin="104,66,0,0" Name="saveButton" VerticalAlignment="Top" Click="saveConsoleButton_Click" HorizontalAlignment="Left" Width="40" />
+        <RichTextBox Margin="12,89,13,0" Name="console" VerticalScrollBarVisibility="Visible" Height="372" VerticalAlignment="Top" FontSize="10">
+            <RichTextBox.Resources>
+                <Style TargetType="{x:Type Paragraph}">
+                    <Setter Property="Margin" Value="0"/>
+                </Style>
+            </RichTextBox.Resources>
+        </RichTextBox>
+        <Button Content="Load" FontSize="10" Height="17" HorizontalAlignment="Left" Margin="151,66,0,0" Name="button1" VerticalAlignment="Top" Width="40" Click="loadConsoleButton_Click" />
+    </Grid>
+    
+</Window>

@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ApplicationSplash" xml:space="preserve">
+    <value>RxDuinoConsole.Data/rxduinologo.jpg</value>
+    <comment>Location of the application splash screen</comment>
+  </data>
+  <data name="BetaVersionString" xml:space="preserve">
+    <value>Please Note That You Are Currently Running a Beta Version of This Application.  Support is Limited</value>
+    <comment>String to display if user is running a beta version</comment>
+  </data>
+  <data name="DisabledVersionString" xml:space="preserve">
+    <value>Sorry, This Version Has Been Disabled.  Please Update To The Latest Version</value>
+    <comment>String to display if the user is running a disabled version of the application</comment>
+  </data>
+  <data name="InvalidComPortString" xml:space="preserve">
+    <value>Please Select Valid COM Port</value>
+    <comment>Message to display when an invalid COM is selected</comment>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="log4net" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\log4net.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="LogFileFilter" xml:space="preserve">
+    <value>Log File|*.log</value>
+    <comment>Filter for the log file dialog</comment>
+  </data>
+  <data name="RxduinoFileFilter" xml:space="preserve">
+    <value>RxDuino Files (*.rxd;*.hex)|*.rxd;*.hex</value>
+    <comment>Filter for the update file dialog</comment>
+  </data>
+  <data name="SplashTimeInMS" xml:space="preserve">
+    <value>1000</value>
+    <comment>Total Time in MS to wait before splash screen goes away</comment>
+  </data>
+  <data name="UpdateAvailableString" xml:space="preserve">
+    <value>Update Available!</value>
+    <comment>String to display when an update is available</comment>
+  </data>
+  <data name="UpdateUrl" xml:space="preserve">
+    <value>http://www.normalexception.net/applications/update.xml</value>
+    <comment>The location of the server side file that tells of the current version of the application</comment>
+  </data>
+  <data name="WebURL" xml:space="preserve">
+    <value>http://www.normalexception.net/redmine/Projects/RxDuino</value>
+    <comment>Link when user clicks the web url</comment>
+  </data>
+  <data name="avrdude" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\avrdude.exe;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="avrconf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\avrdude.conf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="libusb0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\libusb0.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FTDIDriverUrl" xml:space="preserve">
+    <value>http://www.ftdichip.com/Drivers/VCP.htm</value>
+    <comment>Link for an FTDI Drivers</comment>
+  </data>
+  <data name="SetupFileUrl" xml:space="preserve">
+    <value>http://therxduino.com/media/setup.exe</value>
+    <comment>Location of Console setup file</comment>
+  </data>
+  <data name="MotdString" xml:space="preserve">
+    <value>Message of the Day</value>
+    <comment>Title for the MOTD</comment>
+  </data>
+  <data name="BlankMessagesNotAllowedString" xml:space="preserve">
+    <value>Sorry, Blank Messages Are Not Allowed</value>
+    <comment>String to display if the user tries to send a blank message</comment>
+  </data>
+  <data name="ConnectString" xml:space="preserve">
+    <value>Please Connect To Device First!</value>
+    <comment>String to display if the user tries to send a message before connecting</comment>
+  </data>
+  <data name="CommandList" xml:space="preserve">
+    <value>RST,TXT,NEXT,PREV,UP,DOWN,ALT,OFF,PING,DUMP</value>
+    <comment>List of command values for the console</comment>
+  </data>
+  <data name="CommandText" xml:space="preserve">
+    <value>Reset Device,Set The Stored Text,Next Mode,Previous Mode,Previous Monitor,Next Monitor,Alternate Mode,Shut Off Device,Ping Device,Dump Debug Information</value>
+    <comment>Human Readible text for the commands</comment>
+  </data>
+</root>

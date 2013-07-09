@@ -1,0 +1,5 @@
+C:\Users\Corei7\Documents\Visual Studio 2010\Projects\RxDuinoConsole\RxDuinoCrypt\bin\Release\RxDuinoCrypt.pdb
+C:\Users\Corei7\Documents\Visual Studio 2010\Projects\RxDuinoConsole\RxDuinoCrypt\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Corei7\Documents\Visual Studio 2010\Projects\RxDuinoConsole\RxDuinoCrypt\obj\x86\Release\RxDuinoCrypt.pdb
+C:\Users\Corei7\Documents\Visual Studio 2010\Projects\RxDuinoConsole\RxDuinoCrypt\bin\Release\RxDuinoCrypt.dll
+C:\Users\Corei7\Documents\Visual Studio 2010\Projects\RxDuinoConsole\RxDuinoCrypt\obj\x86\Release\RxDuinoCrypt.dll

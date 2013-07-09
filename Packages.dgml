@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="LeftToRight" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="RxDuinoConsole" Label="RxDuinoConsole" Category="Project" />
+    <Node Id="Extended.Wpf.Toolkit 1.6.0" Label="Extended.Wpf.Toolkit 1.6.0" Category="Package" />
+  </Nodes>
+  <Links>
+    <Link Source="RxDuinoConsole" Target="Extended.Wpf.Toolkit 1.6.0" Category="Installed Package" />
+  </Links>
+  <Categories>
+    <Category Id="Project" />
+    <Category Id="Package" />
+  </Categories>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="Project" ValueLabel="True">
+      <Condition Expression="HasCategory('Project')" />
+      <Setter Property="Background" Value="Blue" />
+    </Style>
+  </Styles>
+</DirectedGraph>

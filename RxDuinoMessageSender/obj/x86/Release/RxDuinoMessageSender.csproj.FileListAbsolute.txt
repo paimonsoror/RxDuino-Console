@@ -1,0 +1,11 @@
+C:\Users\Corei7\Documents\Visual Studio 2010\Projects\RxDuinoConsole\RxDuinoMessageSender\bin\Release\RxDuinoMessageSender.exe
+C:\Users\Corei7\Documents\Visual Studio 2010\Projects\RxDuinoConsole\RxDuinoMessageSender\bin\Release\RxDuinoMessageSender.pdb
+C:\Users\Corei7\Documents\Visual Studio 2010\Projects\RxDuinoConsole\RxDuinoMessageSender\obj\x86\Release\MainWindow.baml
+C:\Users\Corei7\Documents\Visual Studio 2010\Projects\RxDuinoConsole\RxDuinoMessageSender\obj\x86\Release\MainWindow.g.cs
+C:\Users\Corei7\Documents\Visual Studio 2010\Projects\RxDuinoConsole\RxDuinoMessageSender\obj\x86\Release\App.g.cs
+C:\Users\Corei7\Documents\Visual Studio 2010\Projects\RxDuinoConsole\RxDuinoMessageSender\obj\x86\Release\RxDuinoMessageSender_MarkupCompile.cache
+C:\Users\Corei7\Documents\Visual Studio 2010\Projects\RxDuinoConsole\RxDuinoMessageSender\obj\x86\Release\RxDuinoMessageSender.g.resources
+C:\Users\Corei7\Documents\Visual Studio 2010\Projects\RxDuinoConsole\RxDuinoMessageSender\obj\x86\Release\RxDuinoMessageSender.Properties.Resources.resources
+C:\Users\Corei7\Documents\Visual Studio 2010\Projects\RxDuinoConsole\RxDuinoMessageSender\obj\x86\Release\RxDuinoMessageSender.exe
+C:\Users\Corei7\Documents\Visual Studio 2010\Projects\RxDuinoConsole\RxDuinoMessageSender\obj\x86\Release\RxDuinoMessageSender.pdb
+C:\Users\Corei7\Documents\Visual Studio 2010\Projects\RxDuinoConsole\RxDuinoMessageSender\obj\x86\Release\RxDuinoMessageSender.csproj.GenerateResource.Cache

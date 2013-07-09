@@ -1,0 +1,55 @@
+﻿<!--
+ * NormalException.net All rights reserved.
+ * This program is not free software; you can not redistribute it and/or modify
+ * it under any terms within the written consent of the developer.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * 
+ * You should have recieved a copy of the rights associated with this program and
+ * all associated source files and hardware related to this program.  If you do
+ * not agree to these rights, please cease all use and dispose of this program
+ * immidately.
+ * 
+ * Violation of these terms is prosecutable by law.
+ *
+ -->    
+<Window x:Class="RxDuinoConsole.RxDuinoConfigView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        Title="Configuration Settings" Background="{x:Static SystemColors.ControlBrush}" Height="273" Width="300" ResizeMode="NoResize">
+    <!-- Main GUI Grid -->
+    <Grid Height="230">
+        <!-- Checkboxes -->
+        <StackPanel Height="73" Margin="12,12,12,0" Name="stackPanel1" VerticalAlignment="Top">
+            <CheckBox Content="Commands Are Case Sensitive" Height="16" Name="caseSensitive" />
+            <CheckBox Content="Remember COM Port Between Sessions" Height="16" Name="rememberCOM" />
+            <CheckBox Content="Disable Internet*" Height="16" Name="disableInternet" />
+            <CheckBox Content="Clear Console Field After Submit" Name="clearAfterSubmit"/>
+        </StackPanel>
+        <!-- GUI Buttons-->
+        <Button Content="Cancel" HorizontalAlignment="Right" Margin="0,0,4,6" Name="cancelButton" Width="75" Click="cancel_click" Height="23" VerticalAlignment="Bottom" />
+        <Button Content="Save" Margin="0,0,85,6" Name="okButton" Click="ok_click" Height="23" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="75" />
+        <!-- GUI Color and Size options -->
+        <Grid Height="70" HorizontalAlignment="Left" Margin="12,106,0,0" Name="grid1" VerticalAlignment="Top" Width="254">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="158" />
+                <ColumnDefinition Width="42*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="37"/>
+                <RowDefinition Height="32"/>
+                <RowDefinition Height="25*" />
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Content="Font Size*" Height="24"/>
+            <xctk:DecimalUpDown Grid.Column="1" Margin="0,12,48,7" Name="fontSize" />
+            <Label Grid.Row="1" Content="Break BG Color" Height="24" HorizontalAlignment="Left" Margin="0,6,0,7" Name="label1" VerticalAlignment="Center" Width="96" />
+            <ComboBox Grid.Row="1" Grid.Column="1" Margin="0,6,48,7" Name="breakBg"></ComboBox>
+        </Grid>
+        <Separator Height="24" HorizontalAlignment="Left" Margin="12,82,0,0" Name="separator2" VerticalAlignment="Top" Width="254" />
+        <Label Content="* Requires Restart" Height="23" HorizontalAlignment="Left" Margin="12,201,0,0" Name="label2" VerticalAlignment="Top" FontSize="10" />
+    </Grid>
+</Window>
